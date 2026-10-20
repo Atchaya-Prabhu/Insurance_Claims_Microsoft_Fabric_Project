@@ -73,6 +73,16 @@ The project aims to analyze:
 - Demographic claim patterns.
 - Claims trends over time.
 
+## ✅ Key Business Questions Answered
+
+| Business Question | How It Is Answered |
+|---|---|
+| 🔍 Who are our top claim-generating customers? | Use `TotalClaimAmount` in the customer-level summary to identify customers with the highest claim amounts. |
+| ✅ What is the claim approval rate by gender or policy type? | Calculate `ApprovedClaims / TotalClaims`, grouped by `Gender` or `PolicyType`. |
+| 📈 What is the trend in claims per customer over time? | Use `FirstClaimDate` and `LastClaimDate` to understand customer claim history and tenure. |
+| 🛡️ What policy types are linked to the most claim activity? | Use the exploded `PolicyTypes` column to analyze claim activity by policy type. |
+| 👥 What demographic groups file the most claims? | Group by `Gender` and compare claim counts and claim amounts. |
+
 ## 🔄 Data Engineering Workflow
 
 1. Ingest raw insurance datasets.
